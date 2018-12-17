@@ -1,5 +1,6 @@
 #include <iostream>
 #include <algorithm>
+#include <numeric>
 #include <vector>
 #include <unordered_map>
 
@@ -17,7 +18,7 @@ int get_max_depth (int max_depth, int person) {
     return max (max_depth, Cache[person]);
 }
 
-int main() {
+void CheckMain() {
     // the number of relationships of influence
     int n; cin >> n;
     for (int i = 0; i < n; i++) {
